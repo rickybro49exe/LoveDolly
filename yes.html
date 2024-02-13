@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Yeeyy ! Finally</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.postimg.cc/wTDG30TB/yes.gif" alt="Cute animated illustration">
+        </div>
+        <button class="btn" id="yesButton">
+            Let's Fix a Date
+        </button>
+    </div>
+
+    <script>
+        // Function to handle button click event
+        function nextPage() {
+            // Redirect to the new.html page
+            window.location.href = "nextPage.html";
+        }
+
+        // Get the button element
+        var button = document.getElementById("yesButton");
+
+        // Add click event listener to the button
+        button.addEventListener("click", nextPage);
+    </script>
+</body>
+</html>
